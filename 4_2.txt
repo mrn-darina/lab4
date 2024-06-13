@@ -1,0 +1,56 @@
+a) git log
+
+b) echo "1: Hello, world!" > my_file.txt
+echo "2: Hello, world!" >> my_file.txt
+echo "3: Hello, world!" >> my_file.txt
+
+c) git add my_file.txt
+git commit -m "Add my_file.txt"
+
+d)git push origin main
+
+//temp step: not necessary but we will do
+del "emp_1.txt"
+del "emp_2.txt"
+del "emp_3.txt"
+//also del dont work in git bash so we use cmd
+git add .
+git commit -m "clear commit"
+git push origin main
+
+e)echo "4: Hello, world!" >> my_file.txt
+
+f)git add my_file.txt
+echo "5: Hello, world!" >> my_file.txt
+echo "6: Hello, world!" >> my_file.txt
+
+g)git status
+
+h)git stash
+git status
+
+i)git stash pop
+git status
+
+j)git restore --staged my_file.txt
+git restore my_file.txt
+git status
+
+k)echo "7: Hello, world!" >> my_file.txt
+
+l) commit b533932
+
+m)git status
+
+n)git pull
+
+o)git stash
+git pull
+
+p)git stash pop
+
+q)seems like it
+
+r)git add .
+git commit -m "added some changes"
+git push origin main
