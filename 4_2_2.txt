@@ -1,0 +1,86 @@
+a)git log
+git checkout main
+//we working in the same repo so all good
+
+b)//same  there
+
+c) echo 'import math
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
+' > utils.py
+//better to usa something like nano or vim but echo is also ok
+
+d)echo 'from utils import factorial
+
+print(factorial(5))
+' > main.py
+
+e)git add .
+git commit -m "added .py files"
+
+f)git checkout -b dev5
+
+g)echo '
+
+def is_power_of_5(n):
+    if n < 1:
+        return False
+    while n % 5 == 0:
+        n //= 5
+    return n == 1
+' >> utils.py
+
+echo '
+from utils import is_power_of_5
+
+print(is_power_of_5(25))
+' >> main.py
+
+h)git add .
+git commit -m "added is_power_of_5 func"
+
+i)echo '
+
+def is_power_of_2(n):
+    if n < 1:
+        return False
+    while n % 2 == 0:
+        n //= 2
+    return n == 1
+' >> utils.py
+
+echo '
+from utils import is_power_of_2
+
+print(is_power_of_2(16))
+' >> main.py
+
+j)git stash
+git checkout main
+git stash pop
+
+k)git add .
+git commit -m "added is_power_of_2 func"
+
+l)git merge dev5
+git add .
+git commit -m "confl resolve"
+
+m)git branch -d dev5
+
+//git push origin main
+//git add .
+//git commit -m "confl resolve2"
+//git push origin main
