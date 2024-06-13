@@ -14,9 +14,6 @@ def is_prime(n):
             return False
     return True
 
-<<<<<<< Updated upstream
-=======
-
 
 def is_power_of_5(n):
     if n < 1:
@@ -26,7 +23,6 @@ def is_power_of_5(n):
     return n == 1
 
 
-
 def is_power_of_2(n):
     if n < 1:
         return False
@@ -34,4 +30,3 @@ def is_power_of_2(n):
         n //= 2
     return n == 1
 
->>>>>>> Stashed changes
