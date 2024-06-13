@@ -84,3 +84,6 @@ m)git branch -d dev5
 //git add .
 //git commit -m "confl resolve2"
 //git push origin main
+//git add 4_2_2.txt
+//git commit -m "added command list"
+// git push origin main
